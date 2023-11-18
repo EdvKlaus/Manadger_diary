@@ -17,7 +17,7 @@ namespace managers_diary
 
             foreach (var line in File.ReadAllLines(@"D:\ComBox1.txt"))
             {
-                var array = line.Split();
+                var array = line.Split('\n');
                 dataGridView1.Rows.Add(array);
             }
 
